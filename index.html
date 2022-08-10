@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitors Entry Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- ================== NAVBAR ================  -->
+    <!-- ============== form =============  -->
+    <form method="POST" name="formName" id="contactform">
+        <input type="text" class="form-control" placeholder="Date" id="date" name="Date">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="Full name" id="name" name="Name">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="From/company" id="from" name="From">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="Purpose" id="purpose" name="Purpose">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="Meet Mr" id="meet" name="Meet">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="Mobile Number" id="mobile" name="Mobile">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="In time" id="mobile" name="In time">
+        <br>
+        <br>
+        <input type="text" class="form-control" placeholder="Out time" id="mobile" name="Out time">
+        <br>
+        <br>
+       
+        <input type="submit" value="Enter to Record in Sheet" class="button" id="submit">
+    </form>
+
+
+<!-- ============ script code =============  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6aDL_WFt0WwPGcwazpkirXC9l_Z5LL9sXoDEF1TUJB18u46XpyYsO8VUFrGLLShzf/exec'
+        const form = document.forms['formName']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
