@@ -1,5 +1,111 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* body {
+    background: linear-gradient(rgba(237, 129, 223, 0.267), rgba(123, 225, 238, 0.263));
+} */
+
+
+/* ================ NAVBAR SECTION ============  */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(205, 58, 185, 0.176), rgba(10, 87, 195, 0.263));
+}
+
+#nav {
+    width: 100%;
+    height: auto;
+}
+
+#nav .container {
+    width: 90%;
+    background-color: white;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    position: relative;
+    top: 1rem;
+    border-radius: 1rem;
+}
+
+#nav .container .logo img {
+    width: 50px;
+}
+
+#nav .container .navbar ul {
+    display: flex;
+}
+
+#nav .container .navbar ul li {
+    list-style: none;
+    margin: 0rem 1rem;
+}
+
+#nav .container .navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ------------ quick entry card -----------  */
+
+#quickEntry {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 2rem;
+}
+
+#quickEntry .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#quickEntry .container .card {
+    margin: 0rem 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 1px 1px 30px white;
+}
+
+#quickEntry .container .card i {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+#quickEntry .container .card h3 {
+    margin: 0.5rem 0rem;
+}
+
+#quickEntry .container .card p {
+    margin: 0.5rem 0rem;
+}
+
+#quickEntry .container .card a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(99, 78, 237, 0.635);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    display: block;
+    border-radius: 0.5rem;
+    transition: all 0.6s;
+}
+
+#quickEntry .container .card a:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+    color: black;
 }

@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visitors Entry Form</title>
+    <!-- ============= goggle font =============  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/c1fe0e6aeb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- ================== NAVBAR ================  -->
-    <!-- ============== form =============  -->
-    <form method="POST" name="formName" id="contactform">
+    <header>
+        <!-- ------------------- navbar ----------  -->
+        <nav id="nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/ssds.jpg" alt="">
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Emergency</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Reporting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ------------ quick entry card ----------  -->
+        <section id="quickEntry">
+            <div class="container">
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Visitor Entry</h3>
+                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <a href="">New Entry</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Returnable Material</h3>
+                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <a href="">New Entry</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Out Ward</h3>
+                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <a href="">New Entry</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Loading Vehicle</h3>
+                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <a href="">New Entry</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ============== form ============= -->
+    <!-- <form method="POST" name="formName" id="contactform">
         <input type="text" class="form-control" placeholder="Date" id="date" name="Date">
         <br>
         <br>
@@ -35,22 +93,26 @@
         <input type="text" class="form-control" placeholder="Out time" id="mobile" name="Out time">
         <br>
         <br>
-       
+
         <input type="submit" value="Enter to Record in Sheet" class="button" id="submit">
-    </form>
+    </form> -->
 
 
-<!-- ============ script code =============  -->
-    <script>
+    <!-- ============ script code =============  -->
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw6aDL_WFt0WwPGcwazpkirXC9l_Z5LL9sXoDEF1TUJB18u46XpyYsO8VUFrGLLShzf/exec'
         const form = document.forms['formName']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script> -->
 </body>
+
 </html>
