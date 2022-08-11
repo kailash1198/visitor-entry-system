@@ -4,6 +4,9 @@
         height: auto;
         padding-bottom: 4rem;
     }
+    #nav .container .logo h3 {
+        display: none;
+    }
     #nav .container .navbar ul .dis-none {
         display: none;
     }
@@ -15,5 +18,11 @@
     }
     #entry .container .form-container {
         width: 100%;
+    }
+    #advance .container {
+        display: block;
+    }
+    #advance .container .card {
+        margin: 1.5rem 0rem;
     }
 }

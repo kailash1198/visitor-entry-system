@@ -38,6 +38,15 @@ header {
     border-radius: 1rem;
 }
 
+#nav .container .logo {
+    display: flex;
+    align-items: center;
+}
+
+#nav .container .logo h3 {
+    margin-left: 1rem;
+}
+
 #nav .container .logo img {
     width: 50px;
 }
@@ -107,5 +116,66 @@ header {
 
 #quickEntry .container .card a:hover {
     background-color: rgba(255, 255, 255, 0.705);
+    color: black;
+}
+
+
+/* ============= 3 card ==============  */
+
+#advance {
+    width: 100%;
+    position: relative;
+    top: 4rem;
+}
+
+#advance .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advance .container .card {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 30px white;
+}
+
+#advance .container .card1 {
+    background-color: rgba(235, 171, 231, 0.185);
+    /* color: white; */
+}
+
+#advance .container .card3 {
+    background-color: rgba(235, 171, 231, 0.185);
+    /* color: white; */
+    text-align: center;
+}
+
+#advance .container .card3 i {
+    margin: 0.5rem 0rem;
+}
+
+#advance .container .card3 h3 {
+    margin: 0.5rem 0rem;
+}
+
+#advance .container .card3 p {
+    margin: 0.5rem 0rem;
+}
+
+#advance .container .card3 a {
+    margin: 0.5rem 0rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+#advance .container .card a {
+    text-decoration: none;
     color: black;
 }
