@@ -13,6 +13,7 @@
 
 
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mobile.css">
     <script src="https://kit.fontawesome.com/c1fe0e6aeb.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,9 +29,9 @@
                 <div class="navbar">
                     <ul>
                         <li><a href="">Dashboard</a></li>
-                        <li><a href="">Emergency</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Reporting</a></li>
+                        <li class="dis-none"><a href="">Emergency</a></li>
+                        <li class="dis-none"><a href="">Contact</a></li>
+                        <li class="dis-none"><a href="">Reporting</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,77 +43,30 @@
                 <div class="card">
                     <i class="fa-solid fa-users"></i>
                     <h3>Visitor Entry</h3>
-                    <p>Entry Visitors details in visitors excel sheet</p>
-                    <a href="">New Entry</a>
+                    <p>Entry Visitors details in visitors excel sheet online</p>
+                    <a href="/pages/visitor-entry.html">New Entry</a>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                     <h3>Returnable Material</h3>
-                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <p>Returnable materials Entry. Entry all returnable material inside factory.</p>
                     <a href="">New Entry</a>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <h3>Out Ward</h3>
-                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <p>Out ward entry. Going material to outside then enter details in sheet.</p>
                     <a href="">New Entry</a>
                 </div>
                 <div class="card">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-truck"></i>
                     <h3>Loading Vehicle</h3>
-                    <p>Entry Visitors details in visitors excel sheet</p>
+                    <p>Loading vehicle entry. Record all details about loading vehicles.</p>
                     <a href="">New Entry</a>
                 </div>
             </div>
         </section>
     </header>
-
-    <!-- ============== form ============= -->
-    <!-- <form method="POST" name="formName" id="contactform">
-        <input type="text" class="form-control" placeholder="Date" id="date" name="Date">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="Full name" id="name" name="Name">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="From/company" id="from" name="From">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="Purpose" id="purpose" name="Purpose">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="Meet Mr" id="meet" name="Meet">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="Mobile Number" id="mobile" name="Mobile">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="In time" id="mobile" name="In time">
-        <br>
-        <br>
-        <input type="text" class="form-control" placeholder="Out time" id="mobile" name="Out time">
-        <br>
-        <br>
-
-        <input type="submit" value="Enter to Record in Sheet" class="button" id="submit">
-    </form> -->
-
-
-    <!-- ============ script code =============  -->
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6aDL_WFt0WwPGcwazpkirXC9l_Z5LL9sXoDEF1TUJB18u46XpyYsO8VUFrGLLShzf/exec'
-        const form = document.forms['formName']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script> -->
 </body>
 
 </html>
